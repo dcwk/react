@@ -1,7 +1,7 @@
-ReactDOM.render(
-    <div>
-        <h1>Привет</h1>
-        <h2>мир</h2>
-    </div>,
+ReactDOM.render(React.createElement('input', {
+        placeholder: "Help text",
+        onClick: () => console.log("Clicked"),
+        onMouseEnter: () => console.log("Mouse over"),
+    }),
     document.getElementById("app")
 )
